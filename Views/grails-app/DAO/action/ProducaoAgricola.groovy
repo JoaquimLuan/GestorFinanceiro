@@ -1,6 +1,0 @@
-package action
-
-class ProducaoAgricola {
-
-
-}

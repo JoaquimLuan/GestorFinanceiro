@@ -2,10 +2,9 @@ package action
 
 class UrlMappings {
     static mappings = {
-        "/$controller/$action?/$id?(.$format)?"{
-            constraints {
-                // apply constraints here
-            }
+
+        group("/custo/") {
+            get "/hectare"(controller: 'producaoAgricolaController', action: 'retornaCustoSojaPorHectare')
         }
 
         "/"(view:"/index")
