@@ -48,7 +48,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-jetty")
     implementation("org.springframework.boot:spring-boot-starter-logging")
     implementation("org.springframework.boot:spring-boot-starter-validation")
-    compileOnly("io.micronaut:micronaut-inject-groovy")
+    implementation("io.micronaut:micronaut-inject-groovy")
     console("org.grails:grails-console")
     runtimeOnly("com.bertramlabs.plugins:asset-pipeline-grails:4.3.0")
     runtimeOnly("com.h2database:h2")
@@ -70,6 +70,7 @@ dependencies {
     testImplementation("io.micronaut:micronaut-http-client")
     implementation "io.springfox:springfox-swagger2:3.0.0"
     implementation "io.springfox:springfox-swagger-ui:3.0.0"
+    implementation 'org.postgresql:postgresql:9.4.1209'
 
 
 

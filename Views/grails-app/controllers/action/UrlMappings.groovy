@@ -3,8 +3,8 @@ package action
 class UrlMappings {
     static mappings = {
 
-        group("/custo/") {
-            get "/hectare"(controller: 'producaoAgricolaController', action: 'retornaCustoSojaPorHectare')
+        group("/producao/agricola") {
+            get "/hectare"(controller: 'producaoAgricola', action: 'retornaCustoSojaPorHectare')
         }
 
         "/"(view:"/index")

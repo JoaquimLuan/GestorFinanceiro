@@ -51,12 +51,14 @@ grails:
     reactor:
       events: false
 dataSource:
-  url: jdbc:h2:mem:devDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
-  driverClassName: org.h2.Driver
-  username: sa
-  password: ''
+  driverClassName: org.postgresql.Driver
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: postgres
+  password: postgres
   pooled: true
   jmxExport: true
+
 hibernate:
   hbm2ddl:
     auto: update
