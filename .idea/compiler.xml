@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="msbancodados" target="11" />
+      <module name="msbancodados.buildSrc" target="17" />
+      <module name="msbancodados.buildSrc.main" target="17" />
+      <module name="msbancodados.buildSrc.test" target="17" />
+      <module name="msbancodados.integrationTest" target="11" />
+      <module name="msbancodados.main" target="11" />
+      <module name="msbancodados.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
