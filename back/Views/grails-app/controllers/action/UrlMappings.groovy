@@ -10,12 +10,11 @@ class UrlMappings {
             get "/algodao"(controller: 'custoPorHectare', action: 'retornaCustoAlgodaoPorHectare')
             get "/uva"(controller: 'custoPorHectare', action: 'retornaCustoUvaPorHectare')
             get "/canaDeAcucar"(controller: 'custoPorHectare', action: 'retornaCustoCanaDeAcucarPorHectare')
-            get "/feijao"(controller: 'custoPorHectare', action: 'retornaCustofeijaoPorHectare')
+            get "/feijao"(controller: 'custoPorHectare', action: 'retornaCustoFeijaoPorHectare')
             get "/tomate"(controller: 'custoPorHectare', action: 'retornaCustoTomatePorHectare')
             get "/cacau"(controller: 'custoPorHectare', action: 'retornaCustoCacauPorHectare')
             get "/arroz"(controller: 'custoPorHectare', action: 'retornaCustoArrozPorHectare')
             get "/abacaxi"(controller: 'custoPorHectare', action: 'retornaCustoAbacaxiPorHectare')
-
         }
 
         "/"(view:"/index")

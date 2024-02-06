@@ -33,7 +33,7 @@ class CustoPorHectareDao {
                         producaoAgricola.safraAno, 
                         producaoAgricola.valorFaturado
                     FROM ProducaoAgricola AS producaoAgricola
-                    WHERE producaoAgricola.cultura = 'café'
+                    WHERE producaoAgricola.cultura = 'Café'
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
         return resultado
@@ -84,8 +84,8 @@ class CustoPorHectareDao {
         return resultado
     }
 
-    List<ProducaoAgricolaDTO> retornaCustoFeijaoPorHectare() {
-        String hql """
+    List<ProducaoAgricolaDTO> retornaCustoFeijaoPorHectare(){
+        String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
                         producaoAgricola.unidade, 
@@ -100,7 +100,7 @@ class CustoPorHectareDao {
     }
 
     List<ProducaoAgricolaDTO> retornaCustoTomatePorHectare() {
-        String hql """
+        String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
                         producaoAgricola.unidade, 
@@ -115,7 +115,7 @@ class CustoPorHectareDao {
     }
 
     List<ProducaoAgricolaDTO> retornaCustoCacauPorHectare() {
-        String hql """
+        String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
                         producaoAgricola.unidade, 
@@ -130,7 +130,7 @@ class CustoPorHectareDao {
     }
 
     List<ProducaoAgricolaDTO> retornaCustoArrozPorHectare() {
-        String hql """
+        String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
                         producaoAgricola.unidade, 
@@ -145,7 +145,7 @@ class CustoPorHectareDao {
     }
 
     List<ProducaoAgricolaDTO> retornaCustoAbacaxiPorHectare() {
-        String hql """
+        String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
                         producaoAgricola.unidade, 
