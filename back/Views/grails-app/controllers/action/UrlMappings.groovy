@@ -17,6 +17,15 @@ class UrlMappings {
             get "/abacaxi"(controller: 'custoPorHectare', action: 'retornaCustoAbacaxiPorHectare')
         }
 
+        group("/receita/regiao") {
+            get "/centrooeste"(controller: 'receitaPorRegiao', action: 'receitaRegiaoCentroOeste')
+            get "/sudeste"(controller: 'receitaPorRegiao', action: 'receitaRegiaoSudeste')
+            get "/norte"(controller: 'receitaPorRegiao', action: 'receitaRegiaoNorte')
+            get "/sul"(controller: 'receitaPorRegiao', action: 'receitaRegiaoSul')
+            get "/nordeste"(controller: 'receitaPorRegiao', action: 'receitaRegiaoNordeste')
+
+        }
+
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')

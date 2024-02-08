@@ -12,7 +12,8 @@ class CustoPorHectareDao {
     List<ProducaoAgricolaDTO> retornaCustoSojaPorHectare() {
         String hql = """
                     SELECT 
-                        producaoAgricola.cultura, 
+                        producaoAgricola.cultura,
+                        producaoAgricola.regiao, 
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -27,7 +28,8 @@ class CustoPorHectareDao {
     List <ProducaoAgricolaDTO> retornaCustoCafePorHectare() {
         String hql = """
                      SELECT 
-                        producaoAgricola.cultura, 
+                        producaoAgricola.cultura,
+                        producaoAgricola.regiao, 
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -43,6 +45,7 @@ class CustoPorHectareDao {
         String hql = """
                      SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -58,6 +61,7 @@ class CustoPorHectareDao {
         String hql = """
                      SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -73,6 +77,7 @@ class CustoPorHectareDao {
         String hql = """
                     SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -88,6 +93,7 @@ class CustoPorHectareDao {
         String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -103,6 +109,7 @@ class CustoPorHectareDao {
         String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -118,6 +125,7 @@ class CustoPorHectareDao {
         String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -132,7 +140,8 @@ class CustoPorHectareDao {
     List<ProducaoAgricolaDTO> retornaCustoArrozPorHectare() {
         String hql = """
                    SELECT 
-                        producaoAgricola.cultura, 
+                        producaoAgricola.cultura,
+                        producaoAgricola.regiao, 
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
@@ -148,6 +157,7 @@ class CustoPorHectareDao {
         String hql = """
                    SELECT 
                         producaoAgricola.cultura, 
+                        producaoAgricola.regiao,
                         producaoAgricola.unidade, 
                         producaoAgricola.custoPorHectare, 
                         producaoAgricola.safraAno, 
