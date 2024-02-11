@@ -23,7 +23,26 @@ class UrlMappings {
             get "/norte"(controller: 'receitaPorRegiao', action: 'receitaRegiaoNorte')
             get "/sul"(controller: 'receitaPorRegiao', action: 'receitaRegiaoSul')
             get "/nordeste"(controller: 'receitaPorRegiao', action: 'receitaRegiaoNordeste')
+        }
 
+        group("/receita/fazenda") {
+            get "/a"(controller: 'receitaPorFazenda', action: 'receitaFazendaA')
+            get "/b"(controller: 'receitaPorFazenda', action: 'receitaFazendaB')
+            get "/c"(controller: 'receitaPorFazenda', action: 'receitaFazendaC')
+        }
+
+        group("/total") {
+            get "/receita"(controller: 'totalValores', action: 'receitaTotal')
+            get "/custo"(controller: 'totalValores', action: 'custoTotal')
+        }
+
+        group("/usuarios") {
+            get "/listar"(controller: 'usuarios', action: 'listarUsuarios')
+            get "/buscar"(controller: 'usuarios', action: 'buscarUsuario')
+            post "/salvar"(controller: 'usuarios', action: 'salvarUsuario')
+            put "/atualizar"(controller: 'usuarios', action: 'atualizarUsuario')
+            delete "/deletar"(controller: 'usuarios', action: 'deletarUsuario')
+            post "/login"(controller: 'usuarios', action: 'loginUsuario')
         }
 
         "/"(view:"/index")

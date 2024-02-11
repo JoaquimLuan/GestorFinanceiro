@@ -1,6 +1,5 @@
 package action.DTO
 
-
 import groovy.transform.CompileStatic
 import groovy.transform.TupleConstructor
 

@@ -17,7 +17,7 @@ class ReceitaPorFazendaDao {
                        SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
                        SUM(producaoAgricola.receita) AS totalReceita
                    FROM ProducaoAgricola AS producaoAgricola
-                   WHERE producaoAgricola.regiao = 'fazenda A'
+                   WHERE producaoAgricola.unidade = 'fazenda A'
                    GROUP BY producaoAgricola.unidade
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
@@ -32,7 +32,7 @@ class ReceitaPorFazendaDao {
                        SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
                        SUM(producaoAgricola.receita) AS totalReceita
                    FROM ProducaoAgricola AS producaoAgricola
-                   WHERE producaoAgricola.regiao = 'fazenda B'
+                   WHERE producaoAgricola.unidade = 'fazenda B'
                    GROUP BY producaoAgricola.unidade
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
@@ -47,7 +47,7 @@ class ReceitaPorFazendaDao {
                        SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
                        SUM(producaoAgricola.receita) AS totalReceita
                    FROM ProducaoAgricola AS producaoAgricola
-                   WHERE producaoAgricola.regiao = 'fazenda C'
+                   WHERE producaoAgricola.unidade = 'fazenda C'
                    GROUP BY producaoAgricola.unidade
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)

@@ -26,6 +26,14 @@ class ReceitaPorRegiaoDao {
 
     List<ProducaoAgricolaDTO> receitaRegiaoSudeste() {
         String hql = """
+                    SELECT
+                       producaoAgricola.regiao,
+                       SUM(producaoAgricola.custoPorHectare) AS totalCustoPorHectare,
+                       SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
+                       SUM(producaoAgricola.receita) AS totalReceita
+                   FROM ProducaoAgricola AS producaoAgricola
+                   WHERE producaoAgricola.regiao = 'Sudeste'
+                   GROUP BY producaoAgricola.regiao
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
         return resultado
@@ -33,6 +41,14 @@ class ReceitaPorRegiaoDao {
 
     List<ProducaoAgricolaDTO> receitaRegiaoNorte() {
         String hql = """
+                    SELECT
+                       producaoAgricola.regiao,
+                       SUM(producaoAgricola.custoPorHectare) AS totalCustoPorHectare,
+                       SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
+                       SUM(producaoAgricola.receita) AS totalReceita
+                   FROM ProducaoAgricola AS producaoAgricola
+                   WHERE producaoAgricola.regiao = 'Norte'
+                   GROUP BY producaoAgricola.regiao
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
         return resultado
@@ -40,6 +56,14 @@ class ReceitaPorRegiaoDao {
 
     List<ProducaoAgricolaDTO> receitaRegiaoSul() {
         String hql = """
+                   SELECT
+                       producaoAgricola.regiao,
+                       SUM(producaoAgricola.custoPorHectare) AS totalCustoPorHectare,
+                       SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
+                       SUM(producaoAgricola.receita) AS totalReceita
+                   FROM ProducaoAgricola AS producaoAgricola
+                   WHERE producaoAgricola.regiao = 'Sul'
+                   GROUP BY producaoAgricola.regiao
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
         return resultado
@@ -47,6 +71,14 @@ class ReceitaPorRegiaoDao {
 
     List<ProducaoAgricolaDTO> receitaRegiaoNordeste() {
         String hql = """
+                   SELECT
+                       producaoAgricola.regiao,
+                       SUM(producaoAgricola.custoPorHectare) AS totalCustoPorHectare,
+                       SUM(producaoAgricola.valorFaturado) AS totalValorFaturado,
+                       SUM(producaoAgricola.receita) AS totalReceita
+                   FROM ProducaoAgricola AS producaoAgricola
+                   WHERE producaoAgricola.regiao = 'Nordeste'
+                   GROUP BY producaoAgricola.regiao
                      """
         List<ProducaoAgricolaDTO> resultado = ProducaoAgricola.executeQuery(hql)
         return resultado

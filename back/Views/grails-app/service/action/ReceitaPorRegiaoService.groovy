@@ -7,7 +7,6 @@ import action.DTO.ProducaoAgricolaDTO
 
 @Transactional
 @Service
-
 class ReceitaPorRegiaoService {
 
     @Autowired
