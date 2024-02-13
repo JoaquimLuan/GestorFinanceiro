@@ -11,9 +11,7 @@ class UsuariosDTO {
     String senha
 
 
-    UsuariosDTO (String email,
-                 String senha
-    ) {
+    UsuariosDTO (String email, String senha) {
         this.email= email
         this.senha = senha
     }

@@ -7,10 +7,10 @@ class UrlMappings {
         group("/usuarios") {
             get "/listar"(controller: 'usuarios', action: 'listarUsuarios')
             get "/$email"(controller: 'usuarios', action: 'buscarUsuario')
-            post "/salvar"(controller: 'usuarios', action: 'salvarUsuario')
-            put "/atualizar"(controller: 'usuarios', action: 'atualizarUsuario')
-            delete "/deletar"(controller: 'usuarios', action: 'deletarUsuario')
-            post "/login"(controller: 'usuarios', action: 'loginUsuario')
+            post "/salvar/$email/$senha"(controller: 'usuarios', action: 'salvarUsuario')
+            put "/atualizar/$email/$senha"(controller: 'usuarios', action: 'atualizarUsuario')
+            delete "/deletar/$email"(controller: 'usuarios', action: 'deletarUsuario')
+            post "/login/$email/$senha"(controller: 'usuarios', action: 'loginUsuario')
         }
 
         "/"(view:"/index")

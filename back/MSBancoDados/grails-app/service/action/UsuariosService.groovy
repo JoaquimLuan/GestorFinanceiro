@@ -16,33 +16,35 @@ class UsuariosService {
 
 
     boolean validarLogin(String email, String senha) {
-        Usuarios usuarios = usuariosDao.buscarUsuarioPorEmail(email)
-        if (usuarios != null && senha == usuarios.senha) {
-            return true
-        } else {
-            return false
+        List<Usuarios> usuarios = usuariosDao.buscarUsuarioPorEmail(email)
+        if (usuarios && !usuarios.isEmpty()) {
+            Usuarios usuario = usuarios[0]
+            if (senha == usuario.senha) {
+                return true
+            }
         }
+        return false
     }
+
 
 
     List buscarUsuarioPorEmail(email) {
         return usuariosDao.buscarUsuarioPorEmail(email)
     }
 
-    Usuarios salvarUsuario(usuariosDTO) {
-        return usuariosDao.salvarUsuario(usuariosDTO)
+    Usuarios salvarUsuario(UsuariosDTO usuariosDTO) {
+        return usuariosDao.salvarUsuario(usuariosDTO.email, usuariosDTO.senha)
     }
 
     List<UsuariosDTO> listarUsuarios() {
         return usuariosDao.listarUsuarios()
     }
 
-    Usuarios atualizarUsuario(UsuariosDTO usuariosDTO) {
-        return usuariosDao.atualizarUsuario(usuariosDTO)
+    Usuarios atualizarUsuario(String email, String senha) {
+        return usuariosDao.atualizarUsuario(email, senha)
     }
 
-    void deletarUsuario(String email) {
-        UsuariosDTO usuariosDTO = new UsuariosDTO(email: email, senha: null)
-        usuariosDao.deletarUsuario(usuariosDTO)
+    Usuarios deletarUsuario(String email) {
+        return usuariosDao.deletarUsuario(email)
     }
 }

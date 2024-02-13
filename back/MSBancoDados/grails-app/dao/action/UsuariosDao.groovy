@@ -14,12 +14,11 @@ class UsuariosDao {
         return resultado
     }
 
-    Usuarios salvarUsuario(usuariosDTO) {
-        Usuarios usuario = new Usuarios(email: usuariosDTO.email, senha: usuariosDTO.senha)
+    Usuarios salvarUsuario(String email, String senha) {
+        Usuarios usuario = new Usuarios(email: email, senha: senha)
         usuario.save()
         return usuario
     }
-
 
     List<UsuariosDTO> listarUsuarios() {
         String hql = """
@@ -32,20 +31,27 @@ class UsuariosDao {
         return resultado
     }
 
-    Usuarios atualizarUsuario(UsuariosDTO usuariosDTO) {
-        Usuarios usuarios = buscarUsuarioPorEmail(usuariosDTO.email)
-        if (usuarios) {
-            usuarios.senha = usuariosDTO.senha
-            usuarios.save(flush: true)
+    Usuarios atualizarUsuario(String email, String senha) {
+        List<Usuarios> usuariosList = buscarUsuarioPorEmail(email)
+        if (usuariosList && !usuariosList.isEmpty()) {
+            Usuarios usuario = usuariosList[0]
+            usuario.senha = senha
+            usuario.save(flush: true)
+            return usuario
         }
-        return usuarios
+        return null
     }
 
-    void deletarUsuario(UsuariosDTO usuariosDTO) {
-        Usuarios usuarios = buscarUsuarioPorEmail(usuariosDTO.email)
-        if (usuarios) {
-            usuarios.delete(flush: true)
+
+    Usuarios deletarUsuario(String email) {
+        List<Usuarios> usuariosList = buscarUsuarioPorEmail(email)
+        if (usuariosList && !usuariosList.isEmpty()) {
+            Usuarios usuario = usuariosList[0]
+            usuario.delete(flush: true)
+            return usuario
         }
+        return null
     }
+
 
 }

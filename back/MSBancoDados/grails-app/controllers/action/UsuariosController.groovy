@@ -29,20 +29,20 @@ class UsuariosController {
     }
 
     @Transactional
-    Usuarios salvarUsuario() {
-        def usuariosDTO = new UsuariosDTO(params.email, params.senha)
+    Usuarios salvarUsuario(String email, String senha) {
+        def usuariosDTO = new UsuariosDTO(email, senha)
         respond usuariosService.salvarUsuario(usuariosDTO)
     }
 
+
     @Transactional
-    Usuarios atualizarUsuario() {
-        def usuariosDTO = new UsuariosDTO(params.email, params.novaSenha)
-        respond usuariosService.atualizarUsuario(usuariosDTO)
+    Usuarios atualizarUsuario(String email, String senha) {
+        respond usuariosService.atualizarUsuario(email, senha)
     }
 
     @Transactional
-    void deletarUsuario() {
-        respond usuariosService.deletarUsuario(params.email)
+    Usuarios deletarUsuario(String email) {
+       respond usuariosService.deletarUsuario(email)
     }
 
     @Transactional
