@@ -1,11 +1,16 @@
 package action
 
 class UrlMappings {
+
     static mappings = {
-        "/$controller/$action?/$id?(.$format)?"{
-            constraints {
-                // apply constraints here
-            }
+
+        group("/usuarios") {
+            get "/listar"(controller: 'usuarios', action: 'listarUsuarios')
+            get "/$email"(controller: 'usuarios', action: 'buscarUsuario')
+            post "/salvar"(controller: 'usuarios', action: 'salvarUsuario')
+            put "/atualizar"(controller: 'usuarios', action: 'atualizarUsuario')
+            delete "/deletar"(controller: 'usuarios', action: 'deletarUsuario')
+            post "/login"(controller: 'usuarios', action: 'loginUsuario')
         }
 
         "/"(view:"/index")

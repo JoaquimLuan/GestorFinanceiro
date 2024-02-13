@@ -6,12 +6,11 @@ pluginManagement {
         gradlePluginPortal()
     }
     plugins {
-        id "org.grails.grails-web" version "6.1.2"
-        id "org.grails.grails-gsp" version "6.1.2"
+        id "org.grails.grails-web" version "6.1.1"
+        id "org.grails.grails-gsp" version "6.1.1"
         id "com.bertramlabs.asset-pipeline" version "4.3.0"
         id "com.github.erdi.webdriver-binaries" version "3.2"
-        id "org.asciidoctor.jvm.convert" version "4.0.0-alpha.1"
     }
 }
 
-rootProject.name="msbancodados"
+rootProject.name="views"
