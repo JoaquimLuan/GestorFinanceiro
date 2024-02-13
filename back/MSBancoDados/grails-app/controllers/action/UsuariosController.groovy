@@ -19,29 +19,30 @@ class UsuariosController {
 
     @Transactional
     List<UsuariosDTO> listarUsuarios() {
-        respond (usuariosService.listarUsuarios()) as UsuariosDTO
+        respond usuariosService.listarUsuarios()
     }
 
-    @Transactional(readOnly = true)
-    Usuarios buscarUsuario(String email) {
-        usuariosService.buscarUsuarioPorEmail(email)
+    @Transactional
+    List<UsuariosDTO> buscarUsuario() {
+        def email = params.email
+        respond usuariosService.buscarUsuarioPorEmail(email)
     }
 
     @Transactional
     Usuarios salvarUsuario() {
         def usuariosDTO = new UsuariosDTO(params.email, params.senha)
-        respond (usuariosService.salvarUsuario(usuariosDTO)) as UsuariosDTO
+        respond usuariosService.salvarUsuario(usuariosDTO)
     }
 
     @Transactional
     Usuarios atualizarUsuario() {
         def usuariosDTO = new UsuariosDTO(params.email, params.novaSenha)
-        usuariosService.atualizarUsuario(usuariosDTO)
+        respond usuariosService.atualizarUsuario(usuariosDTO)
     }
 
     @Transactional
     void deletarUsuario() {
-        usuariosService.deletarUsuario(params.email)
+        respond usuariosService.deletarUsuario(params.email)
     }
 
     @Transactional

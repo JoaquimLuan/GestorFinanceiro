@@ -9,15 +9,17 @@ import tabela.Usuarios
 @Component
 class UsuariosDao {
 
-    Usuarios buscarUsuarioPorEmail(String email) {
-        Usuarios.findByEmail(email)
+    List<UsuariosDTO> buscarUsuarioPorEmail(email) {
+        List<UsuariosDTO> resultado = Usuarios.where { email == email }.list()
+        return resultado
     }
 
-    Usuarios salvarUsuario(UsuariosDTO usuariosDTO) {
-        Usuarios usuarios = new Usuarios(email: usuariosDTO.email, senha: usuariosDTO.senha)
-        usuarios.save(flush: true)
-        return usuarios
+    Usuarios salvarUsuario(usuariosDTO) {
+        Usuarios usuario = new Usuarios(email: usuariosDTO.email, senha: usuariosDTO.senha)
+        usuario.save()
+        return usuario
     }
+
 
     List<UsuariosDTO> listarUsuarios() {
         String hql = """

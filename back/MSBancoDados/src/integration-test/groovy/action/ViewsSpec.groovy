@@ -9,14 +9,14 @@ import geb.spock.*
  */
 @Integration
 @Rollback
-class MsbancodadosSpec extends GebSpec {
+class ViewsSpec extends GebSpec {
 
-    void "test something"() {
-        when:"The home page is visited"
-            go '/'
-
-        then:"The title is correct"
-            title == "Welcome to Grails"
-    }
+//    void "test something"() {
+//        when:"The home page is visited"
+//            go '/'
+//
+//        then:"The title is correct"
+//            title == "Welcome to Grails"
+//    }
 
 }

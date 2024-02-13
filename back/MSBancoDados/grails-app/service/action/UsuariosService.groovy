@@ -17,21 +17,19 @@ class UsuariosService {
 
     boolean validarLogin(String email, String senha) {
         Usuarios usuarios = usuariosDao.buscarUsuarioPorEmail(email)
-        // Faça a validação do login sem a verificação do PasswordEncoder
-        // Aqui você pode fazer a comparação direta entre as senhas,
-        // mas certifique-se de que está armazenando as senhas de forma segura
-        if (usuarios && senha == usuarios.senha) {
+        if (usuarios != null && senha == usuarios.senha) {
             return true
         } else {
             return false
         }
     }
 
-    Usuarios buscarUsuarioPorEmail(String email) {
+
+    List buscarUsuarioPorEmail(email) {
         return usuariosDao.buscarUsuarioPorEmail(email)
     }
 
-    Usuarios salvarUsuario(UsuariosDTO usuariosDTO) {
+    Usuarios salvarUsuario(usuariosDTO) {
         return usuariosDao.salvarUsuario(usuariosDTO)
     }
 

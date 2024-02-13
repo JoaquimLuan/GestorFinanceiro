@@ -13,4 +13,8 @@ class Usuarios {
         senha(nullable: false)
     }
 
+    static mapping = {
+        version false
+    }
+
 }
