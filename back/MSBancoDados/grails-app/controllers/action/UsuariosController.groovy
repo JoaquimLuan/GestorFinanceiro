@@ -34,7 +34,6 @@ class UsuariosController {
         respond usuariosService.salvarUsuario(usuariosDTO)
     }
 
-
     @Transactional
     Usuarios atualizarUsuario(String email, String senha) {
         respond usuariosService.atualizarUsuario(email, senha)
