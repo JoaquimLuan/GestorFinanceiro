@@ -12,7 +12,6 @@ class CustoPorHectareServiceSpec extends Specification implements ControllerUnit
 
     @Subject
     CustoPorHectareService custoPorHectareService
-
     CustoPorHectareDao custoPorHectareDao = Mock()
 
     def setup() {
