@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ActionDash": {
+    "action-front": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/action-dash",
+            "outputPath": "dist/action-front",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -57,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ActionDash:build:production"
+              "buildTarget": "action-front:build:production"
             },
             "development": {
-              "buildTarget": "ActionDash:build:development"
+              "buildTarget": "action-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -68,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ActionDash:build"
+            "buildTarget": "action-front:build"
           }
         },
         "test": {
@@ -93,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "1b0dbf4a-4bb1-4fae-b521-9bf7e931d199"
+    "analytics": "0bfb396e-42df-4830-9944-440ad5f63c6f"
   }
 }
