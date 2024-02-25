@@ -3,6 +3,7 @@ package action
 import action.DTO.UsuariosDTO
 import grails.gorm.transactions.Transactional
 import tabela.Usuarios
+import grails.plugin.springsecurity.annotation.Secured
 
 class UsuariosController {
 
@@ -44,16 +45,17 @@ class UsuariosController {
        respond usuariosService.deletarUsuario(email)
     }
 
+    @Secured('permitAll')
     @Transactional
     def loginUsuario() {
         String email = params.email
         String senha = params.senha
 
         if (usuariosService.validarLogin(email, senha)) {
-            redirect(uri: "/")
+            def token = usuariosService.gerarTokenAcesso(email)
+            render status: 200, contentType: "application/json", text: "{\"token\": \"$token\"}"
         } else {
-            flash.message = "Email ou senha inválidos"
-            redirect(uri: "/login")
+            render status: 401, contentType: "application/json", text: '{"status": "Erro", "message": "Email ou senha inválidos"}'
         }
     }
 }

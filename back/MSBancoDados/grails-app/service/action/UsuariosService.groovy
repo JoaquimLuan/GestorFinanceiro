@@ -6,6 +6,10 @@ import org.springframework.stereotype.Service
 import action.DTO.UsuariosDTO
 import action.UsuariosDao
 import tabela.Usuarios
+import grails.plugin.springsecurity.SpringSecurityUtils
+import io.jsonwebtoken.Jwts
+import io.jsonwebtoken.SignatureAlgorithm
+import io.jsonwebtoken.security.Keys
 
 @Transactional
 @Service
@@ -46,5 +50,16 @@ class UsuariosService {
 
     Usuarios deletarUsuario(String email) {
         return usuariosDao.deletarUsuario(email)
+    }
+
+    String gerarTokenAcesso(String email) {
+        String secretKey = SpringSecurityUtils.securityConfig.secretKey
+        def key = Keys.secretKeyFor(SignatureAlgorithm.HS512)
+        Date dataExpiracao = new Date(System.currentTimeMillis() + (15 * 60 * 1000))
+        return Jwts.builder()
+                .setSubject(email)
+                .setExpiration(dataExpiracao)
+                .signWith(key, SignatureAlgorithm.HS512)
+                .compact()
     }
 }
