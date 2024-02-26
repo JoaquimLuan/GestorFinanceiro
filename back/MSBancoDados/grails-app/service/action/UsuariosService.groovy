@@ -30,8 +30,6 @@ class UsuariosService {
         return false
     }
 
-
-
     List buscarUsuarioPorEmail(email) {
         return usuariosDao.buscarUsuarioPorEmail(email)
     }
