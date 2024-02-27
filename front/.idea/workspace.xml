@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b971a204-fb5d-46e9-a0a2-51db32afe9e3" name="Changes" comment="feat: criando tela de dash">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dashboard.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-Agricola-model/CustoTotalModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dash-model/CustoTotalModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-Agricola-model/ReceitaTotalModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dash-model/ReceitaTotalModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-agricola-service/producao.agricola.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dash-service/producao.agricola.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-agricola.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dashboards/dash-producao-agricola/dash-producao-agricola.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-agricola.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dashboards/dash-producao-agricola/dash-producao-agricola.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-agricola.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dashboards/dash-producao-agricola/dash-producao-agricola.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dash-producao-agricola.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro/dashboards/dash-producao-agricola/dash-producao-agricola.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionDash/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ActionDash/src/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ActionDash" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2cs5PvSWruhiKnFXvCN2N19BQLO" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/joaquimborges/Documentos/Action/GestorFinanceiro/front/ActionDash/src/app/pages/dashbord-agro",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/snap/intellij-idea-ultimate/478/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ActionDash/src/app/pages/dashbord-agro" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ActionDash/src/app/pages/dash-producao-agricola/dashboards/dash-producao-agricola" />
+      <recent name="$PROJECT_DIR$/ActionDash/src/app/pages/login" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="front" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="front" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b971a204-fb5d-46e9-a0a2-51db32afe9e3" name="Changes" comment="feat: criando tela de login" />
+      <created>1708887424313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708887424313</updated>
+      <workItem from="1708887425367" duration="15982000" />
+      <workItem from="1708955401341" duration="491000" />
+      <workItem from="1708969133135" duration="465000" />
+      <workItem from="1708991296816" duration="10251000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: criando tela de dash">
+      <option name="closed" value="true" />
+      <created>1708911431169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708911431169</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: criando tela de login" />
+    <MESSAGE value="feat: criando tela de dash" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: criando tela de dash" />
+  </component>
+</project>
